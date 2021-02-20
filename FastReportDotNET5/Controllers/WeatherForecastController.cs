@@ -64,11 +64,7 @@ namespace FastReportDotNET5.Controllers
             var webRootPath = _webHostEnvironment.WebRootPath;
             var reportPath = (webRootPath + "/reports/" + reportName);
 
-            var stream = new MemoryStream();
-
             Config.WebMode = true;
-
-            var report = new Report();
 
             var jsonString = JsonConvert.SerializeObject(Summaries);
 
@@ -81,6 +77,8 @@ namespace FastReportDotNET5.Controllers
                 Json = jsonString
             };
 
+            var report = new Report();
+
             report.Load(reportPath);
 
             report.Dictionary.Connections[0].ConnectionString = jsonBuilder.ConnectionString;
@@ -92,6 +90,7 @@ namespace FastReportDotNET5.Controllers
                 ShowProgress = false
             };
 
+            var stream = new MemoryStream();
             report.Export(pdfExport, stream);
             stream.Position = 0;
 
