@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastReportDotNET5", "FastReportDotNET5\FastReportDotNET5.csproj", "{242F8B39-B875-4D2F-B75C-C440508F032B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{242F8B39-B875-4D2F-B75C-C440508F032B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242F8B39-B875-4D2F-B75C-C440508F032B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242F8B39-B875-4D2F-B75C-C440508F032B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242F8B39-B875-4D2F-B75C-C440508F032B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C41EDA67-A19E-4606-9799-3985A6DC44AB}
+	EndGlobalSection
+EndGlobal

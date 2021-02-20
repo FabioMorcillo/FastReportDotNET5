@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/19/2021 17:45:48" ReportInfo.Modified="02/19/2021 20:45:04" ReportInfo.CreatorVersion="2021.1.16.0">
+  <Dictionary>
+    <JsonDataSourceConnection Name="WeatherConnection" ConnectionString="rijcmlqheq0EC6vV1UW+8gJW4CnbAltFJSCqCRxDCYtrNewa+eTIeZYkvZ4WADzmTHTGldULr+ro98hgELFi1RyA5P8xULpVkGzxx5DzA3f+3uvbcioxs4+uxLBZfuQkFpwVO4o13l0toIhZH1rTp1AcA1jLlL065UOfmLS4O2GiO1Bqlz4Yq3jaaXFdUMgez6PTste">
+      <JsonTableDataSource Name="JSON" DataType="FastReport.Data.JsonConnection.JsonParser.JsonArray" Enabled="true" TableName="JSON">
+        <Column Name="index" DataType="System.Int32"/>
+        <Column Name="item" DataType="System.String"/>
+        <Column Name="array" DataType="FastReport.JsonBase"/>
+      </JsonTableDataSource>
+    </JsonDataSourceConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Left="18.9" Top="9.45" Width="680.4" Height="18.9" Text="Weather Report" HorzAlign="Center" Font="Arial, 14.25pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Left="18.9" Width="94.5" Height="18.9" Text="item" HorzAlign="Center" Font="Arial, 10pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="37.8" DataSource="JSON">
+      <TextObject Name="Text2" Left="18.9" Top="9.45" Width="94.5" Height="18.9" Text="[JSON.item]" HorzAlign="Center" Font="Arial, 10pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="115.95" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>
