@@ -2,7 +2,7 @@
 
 Projeto demonstrando o gerador de relatórios gratuito Fastreport Community.
 
-![.NET](https://github.com/FabioMorcillo/FastReportDotNET5/workflows/.NET/badge.svg?branch=master)
+![.NET](https://github.com/FabioMorcillo/FastReportDotNET5/workflows/.NET/badge.svg)
 
 ## Artigo sobre este projeto
 
